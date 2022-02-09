@@ -1,8 +1,102 @@
+:root {
+  /* основные шрифты */
+  --main-font: 'Open Sans', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  --accent-txt-cl: #ff6c00;
+
+  /* светлая тема текста*/
+  --primary-light-txt: #555555;
+  --secondary-light-txt: #303030;
+
+  /* темная тема текста*/
+  --primary-dark-txt: #ffffff;
+  --secondary-dark-txt: rgba(157, 164, 189, 0.6);
+
+  /* светлая тема фона */
+  --primary-light-bg: #ffffff;
+  --secondary-light-bg: #f7f7f7;
+
+  /* темная тема фона */
+  --primary-dark-bg: #191c26;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--main-font);
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
 
-  color: #555555;
+  color: var(--primary-light-txt);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.subtitle {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  color: var(--primary-light-txt);
+}
+
+.title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  color: var(--secondary-light-txt);
+}
+
+.main-button {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: var(--secondary-light-txt);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* шапка */
+.header {
+  background-color: var(--primary-dark-bg);
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--primary-dark-txt);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-txt-cl);
+}
+
+.header-phone {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
