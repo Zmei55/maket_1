@@ -43,6 +43,9 @@ p {
 }
 
 .list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   list-style: none;
 }
 
@@ -101,15 +104,6 @@ p {
   color: var(--primary-txt--mode-dark);
 }
 
-/* .discription {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-} */
-
 .subtitle {
   font-size: 18px;
   line-height: 1.67;
@@ -136,7 +130,7 @@ p {
 
   max-width: 350px;
   min-width: 160px;
-  padding: 11px 19px;
+  padding: 12px 20px;
   border: 1px solid var(--accent-cl);
   border-radius: 25px;
 
@@ -174,11 +168,14 @@ p {
 
 /* шапка */
 .header {
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: var(--primary-bg--mode-dark);
 }
 
 .header-container {
   display: flex;
+  align-items: center;
 }
 
 .header-link {
@@ -190,18 +187,18 @@ p {
   align-items: center;
 }
 
-.nav-list,
-.header-wrapper {
-  padding-top: 52px;
-  padding-bottom: 52px;
-}
-
 .nav-item {
   margin-right: 40px;
 }
 
 .nav-item:last-child {
-  margin-right: 0;
+  margin: 0;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 .nav-link,
@@ -219,16 +216,9 @@ p {
   color: var(--accent-cl);
 }
 
-.header-wrapper {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
 .header-phone {
+  margin-right: 40px;
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
 }
 
 .header-phone:hover,
@@ -250,6 +240,10 @@ p {
   margin-right: 40px;
 }
 
+.hero-item:last-child {
+  margin: 0;
+}
+
 .hero-title {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -259,6 +253,10 @@ p {
   color: var(--primary-txt--mode-dark);
 
   margin-bottom: 20px;
+}
+
+.hero .subtitle {
+  margin-bottom: 0;
 }
 
 .hero-btn {
@@ -313,14 +311,43 @@ p {
   background-color: var(--secondary-bg--mode-dark);
 }
 
+.price .title {
+  margin-bottom: 44px;
+}
+
 .price-list {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.price-item {
+  outline: 1px solid red;
+  flex-basis: calc(100% / 2);
+  padding: 30px 40px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.price-inner-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.price-inner-item:last-child {
+  margin-bottom: 0;
 }
 
 .price-inner-name,
 .price-inner-cost {
   color: var(--main-txt--mode-dark);
+}
+
+.price .main-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* advantages */
@@ -348,7 +375,7 @@ p {
 
 .team-position {
   font-style: 14px;
-  line-height: 1.39;
+  line-height: 1.36;
   letter-spacing: 0.02em;
 
   color: var(--accent-cl);
@@ -368,7 +395,7 @@ p {
 }
 
 /* селектор ссылки по атрибуту, который начинается со слова "mailto:" */
-.contacts-link[href='mailto:'] {
+.contacts-link[href^='mailto:'] {
   text-decoration: underline;
 }
 
@@ -386,4 +413,21 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+}
+
+.footer-item {
+  margin-right: 40px;
+}
+
+.footer-item:last-child {
+  margin-right: 0;
+}
+
+.footer-copyright {
+  margin-bottom: 0;
 }

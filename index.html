@@ -54,28 +54,30 @@
     <main>
       <!-- Секция Герой -->
       <section class="hero">
-        <ul class="hero-list list">
-          <li class="hero-item">
-            <a class="public-link link" href="" lang="en">Instagram</a>
-          </li>
-          <li class="hero-item">
-            <a class="public-link link" href="" lang="en">Youtube</a>
-          </li>
-        </ul>
-        <p class="uppertitle uppertitle-mode-dark" lang="en">A hair salon for men in Kyiv</p>
-        <h1 class="hero-title">BarberShop</h1>
-        <p class="subtitle subtitle-mode-dark">
-          Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
-        </p>
+        <div class="container">
+          <ul class="hero-list list">
+            <li class="hero-item">
+              <a class="public-link link" href="" lang="en">Instagram</a>
+            </li>
+            <li class="hero-item">
+              <a class="public-link link" href="" lang="en">Youtube</a>
+            </li>
+          </ul>
+          <p class="uppertitle uppertitle-mode-dark" lang="en">A hair salon for men in Kyiv</p>
+          <h1 class="hero-title">BarberShop</h1>
+          <p class="subtitle subtitle-mode-dark">
+            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
+          </p>
 
-        <ul class="hero-list list">
-          <li class="hero-item">
-            <button class="hero-btn hero-btn-disable" type="button">Назад</button>
-          </li>
-          <li class="hero-item">
-            <button class="hero-btn" type="button">Вперед</button>
-          </li>
-        </ul>
+          <ul class="hero-list list">
+            <li class="hero-item">
+              <button class="hero-btn hero-btn-disable" type="button">Назад</button>
+            </li>
+            <li class="hero-item">
+              <button class="hero-btn" type="button">Вперед</button>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Секция О нас -->
@@ -124,37 +126,45 @@
           <p class="uppertitle uppertitle-mode-dark">Проведи время в компании лучших мастеров</p>
           <h2 class="title title-mode-dark">Услуги и цены</h2>
           <ul class="price-list list">
-            <li class="price-inner-item">
-              <span class="price-inner-name">Мужская стрижка </span>
-              <span class="price-inner-cost">от 300 грн.</span>
+            <li class="price-item">
+              <ul class="price-inner-list list">
+                <li class="price-inner-item">
+                  <span class="price-inner-name">Мужская стрижка</span>
+                  <span class="price-inner-cost">от 300 грн.</span>
+                </li>
+                <li class="price-inner-item">
+                  <span class="price-inner-name">Стрижка бороды</span>
+                  <span class="price-inner-cost">от 200 грн.</span>
+                </li>
+                <li class="price-inner-item">
+                  <span class="price-inner-name">Стрижка усов</span>
+                  <span class="price-inner-cost">от 200 грн.</span>
+                </li>
+                <li class="price-inner-item">
+                  <span class="price-inner-name">Бритье опасной бритвой</span>
+                  <span class="price-inner-cost">от 200 грн.</span>
+                </li>
+              </ul>
             </li>
-            <li class="price-inner-item">
-              <span class="price-inner-name">Стрижка бороды </span>
-              <span class="price-inner-cost">от 200 грн.</span>
-            </li>
-            <li class="price-inner-item">
-              <span class="price-inner-name">Стрижка усов </span>
-              <span class="price-inner-cost">от 200 грн.</span>
-            </li>
-            <li class="price-inner-item">
-              <span class="price-inner-name">Бритье опасной бритвой </span>
-              <span class="price-inner-cost">от 200 грн.</span>
-            </li>
-            <li class="price-inner-item">
-              <span class="price-inner-name">Cтрижка у стажера </span>
-              <span class="price-inner-cost">от 50 грн.</span>
-            </li>
-            <li class="price-inner-item">
-              <span class="price-inner-name">Стрижка под насадку </span>
-              <span class="price-inner-cost">от 200 грн.</span>
-            </li>
-            <li class="price-inner-item">
-              <span class="price-inner-name">Детская стрижка (до 12 лет) </span>
-              <span class="price-inner-cost">от 300 грн.</span>
-            </li>
-            <li class="price-inner-item">
-              <span class="price-inner-name">Камуфлирование седины </span>
-              <span class="price-inner-cost">от 200 грн.</span>
+            <li class="price-item">
+              <ul class="price-inner-list list">
+                <li class="price-inner-item">
+                  <span class="price-inner-name">Cтрижка у стажера</span>
+                  <span class="price-inner-cost">от 50 грн.</span>
+                </li>
+                <li class="price-inner-item">
+                  <span class="price-inner-name">Стрижка под насадку</span>
+                  <span class="price-inner-cost">от 200 грн.</span>
+                </li>
+                <li class="price-inner-item">
+                  <span class="price-inner-name">Детская стрижка (до 12 лет)</span>
+                  <span class="price-inner-cost">от 300 грн.</span>
+                </li>
+                <li class="price-inner-item">
+                  <span class="price-inner-name">Камуфлирование седины</span>
+                  <span class="price-inner-cost">от 200 грн.</span>
+                </li>
+              </ul>
             </li>
           </ul>
           <button class="main-btn main-btn-mode-dark" type="button">онлайн-запись</button>
@@ -329,7 +339,7 @@
 
     <!-- Подвал сайта -->
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
         <p class="footer-copyright">&#169; Copyright 2020</p>
         <ul class="footer-list list">
           <li class="footer-item">
