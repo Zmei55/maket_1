@@ -381,6 +381,9 @@ p {
   color: var(--accent-cl);
 }
 
+.socials {
+}
+
 /* contacts */
 .contacts {
   background-color: var(--secondary-bg--mode-dark);
